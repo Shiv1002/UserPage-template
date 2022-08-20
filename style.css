@@ -2,6 +2,12 @@
     margin:0;
     padding:0;
 }
+body{
+    background: linear-gradient(36deg, #c71585, #a81818f0);
+    height: 100vh;
+}
+
+
 
 .navbar{
     list-style: none;
@@ -22,10 +28,7 @@
     text-align: center;
     background: #ba1d56;
 }
-body{
-    background: linear-gradient(36deg, #c71585, #a81818f0);
-    height: 100vh;
-}
+
 .users-dash{
     height: 92vh;
     display: grid;
@@ -52,4 +55,19 @@ body{
 }
 .user:hover{
 transform: scale(1.2);
+}
+
+
+@media screen and (max-width : 768px){
+    body{
+        background: #b31cb4;
+    }
+}
+@media screen and (max-width : 576px){
+    body{
+        background: #f52df5;
+    }
+    .user{
+        background: #c71585;
+    }
 }
